@@ -1,9 +1,9 @@
 // This is where your JS goes!
 
-// You can fetch data from https://cs571.org/api/s24/ice/chili
+// You can fetch data from https://cs571api.cs.wisc.edu/rest/su24/ice/chili
 // When you are complete, you should also be able to fetch data from...
-//  https://cs571.org/api/s24/ice/pasta
-//  https://cs571.org/api/s24/ice/pizza
+//  https://cs571api.cs.wisc.edu/rest/su24/ice/pasta
+//  https://cs571api.cs.wisc.edu/rest/su24/ice/pizza
 
 const BASE_AMNS = [1, 15, 14.5, 2, 1, 1, 1]
 const REVIEWS = [

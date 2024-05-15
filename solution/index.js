@@ -1,9 +1,9 @@
 // This is where your JS goes!
 
-// You can fetch data from https://cs571.org/api/s24/ice/chili
+// You can fetch data from https://cs571api.cs.wisc.edu/rest/su24/ice/chili
 // When you are complete, you should also be able to fetch data from...
-//  https://cs571.org/api/s24/ice/pasta
-//  https://cs571.org/api/s24/ice/pizza
+//  https://cs571api.cs.wisc.edu/rest/su24/ice/pasta
+//  https://cs571api.cs.wisc.edu/rest/su24/ice/pizza
 
 let recipe;
 let baseAmounts = [];
@@ -12,9 +12,9 @@ let reviewNum = 0;
 
 function updateRecipe() {
     const selectedRecipe = document.getElementById("recipe-selector").value;
-    fetch("https://cs571.org/api/s24/ice/" + selectedRecipe, {
+    fetch("https://cs571api.cs.wisc.edu/rest/su24/ice/" + selectedRecipe, {
         headers: {
-            "X-CS571-ID": CS571.getBadgerId() // you may hardcode your bid_
+            "X-CS571-ID": CS571.getBadgerId()
         }
     })
     .then(res => res.json())
